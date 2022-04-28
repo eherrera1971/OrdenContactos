@@ -34,7 +34,7 @@ func traerTodosContactos() async {
     do {
         try store.enumerateContacts(with: request, usingBlock: { contacto, resultado in
             print(contacto.givenName)
-            if contacto.givenName == "Ferran" {
+            if contacto.givenName == "Hola" {
                 guard let nuevoContacto = contacto.mutableCopy() as? CNMutableContact else { return }
                 nuevoContacto.familyName = "Español Amigo"
                 
